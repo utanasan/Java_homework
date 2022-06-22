@@ -34,6 +34,8 @@ public class Task16 {
                     mas[i + 1] = buf;
                 }
             }
+
+            
         }
         System.out.println(Arrays.toString(mas));
 
