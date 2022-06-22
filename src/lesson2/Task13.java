@@ -15,20 +15,36 @@ public class Task13 {
         int second = scanner.nextInt();
         System.out.print("Input a third number: ");
         int third = scanner.nextInt();
-
-        if (first < second && first < third && second < third) {
+        //by condition necessary descending
+        // 6 if else cases
+        //if first, second, third - 2 2 2 ?
+        
+//         if (first >= second && second >= third) {
+//             System.out.println(first + " " + second + " " + third);
+//         }
+//         //else if
+//         else if (second >= first && first >= third) {
+//             System.out.println(second + " " + first + " " + third);
+//         }
+//         else if (third >= second && second >= first) {
+//             System.out.println(third + " " + second + " " + first);
+//         }
+//         else if (third <= second && third <=first && second >= first) {
+//             System.out.println(third + " " + first + " " + second);
+//         }
+           
+           if (first >= second && first >= third && second >= third) {
             System.out.println(first + " " + second + " " + third);
-        }
-        if (second < first && second < third && first < third) {
+        } else if (first >= second && third >= second && first >=third) {
+            System.out.println(first + " " + third + " " + second);
+        } else if (second >= first && second >= third && first >= third) {
             System.out.println(second + " " + first + " " + third);
-        }
-        if (third < second && third < first && second < first) {
-            System.out.println(third + " " + second + " " + first);
-        }
-        if (third < second && third < first && second > first) {
+        } else if (second >= first && second >= third && third >= first) {
+            System.out.println(second + " " + third + " " + first);
+        } else if (third >= first && third >= second && first >=second) {
             System.out.println(third + " " + first + " " + second);
+        } else if (third >= first && third >= second && second >= first) {
+            System.out.println(third + " " +second + " " + first);
         }
-
-
     }
 }
