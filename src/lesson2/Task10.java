@@ -5,6 +5,8 @@ package lesson2;
  */
 public class Task10 {
     public static void main(String[] args) {
+        //solution
+        System.out.println(2 * (3 + 4 * (5 + 6 * 7)));
         System.out.println((2*3)+4*5+(6*7));
     }
 }
